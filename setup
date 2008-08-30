@@ -1,6 +1,8 @@
 #!/bin/bash
-ln -s bash_profile ../.bash_profile
-ln -s bashrc ../.bashrc
-ln -s gitconfig ../.gitconfig
-ln -s ssh ../.ssh
-ln -s vimrc ../.vimrc
+CURDIR='.conf'
+ln -s $CURDIR/bash_profile ~/.bash_profile
+ln -s $CURDIR/bashrc ~/.bashrc
+ln -s $CURDIR/gitconfig ~/.gitconfig
+ln -s $CURDIR/ssh ~/.ssh
+ln -s $CURDIR/vimrc ~/.vimrc
+ln -s $CURDIR/vim ~/.vim
