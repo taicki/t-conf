@@ -18,5 +18,6 @@ export CLASSPATH=".:$LIB/ant.jar:$LIB/antlr-2.7.7.jar:$LIB/antlr-3.0.1.jar:$LIB/
 export EDITOR=vim
 
 alias dejaview='ssh -p 12049 dejaview@localhost'
+alias rsync='rsync --progress'
 
 set -o vi
