@@ -2,9 +2,11 @@ set nocompatible
 set background=dark
 set encoding=utf-8
 
+set nu
 filetype plugin on
 filetype indent on
 set autoindent
+set foldmethod=syntax
 
 let mapleader = ","
 let g:mapleader = ","
