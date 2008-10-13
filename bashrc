@@ -19,4 +19,4 @@ export EDITOR=vim
 
 alias dejaview='ssh -p 12049 dejaview@localhost'
 alias rsync='rsync --progress'
-
+alias screen='TERM=screen screen'
