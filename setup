@@ -3,7 +3,6 @@ CURDIR='.conf'
 ln -sf $CURDIR/bash_profile ~/.bash_profile
 ln -sf $CURDIR/bashrc ~/.bashrc
 ln -sf $CURDIR/gitconfig ~/.gitconfig
-ln -sf $CURDIR/ssh ~/.ssh
 ln -sf $CURDIR/vimrc ~/.vimrc
 ln -sf $CURDIR/vim ~/.vim
 ln -sf $CURDIR/Xdefaults ~/.Xdefaults
