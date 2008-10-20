@@ -20,3 +20,4 @@ export EDITOR=vim
 alias dejaview='ssh -p 12049 dejaview@localhost'
 alias rsync='rsync --progress'
 
+export PYTHONPATH=~/lib/python:$PYTHONPATH
