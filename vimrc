@@ -11,7 +11,7 @@ set foldmethod=syntax
 let mapleader = ","
 let g:mapleader = ","
 
-set textwidth=80
+set textwidth=78
 au BufRead,BufNewFile *.txt,*.tex set fo=a
 
 set hlsearch
@@ -19,15 +19,14 @@ set incsearch
 set ignorecase
 
 au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
-au BufRead *.c,*.h set shiftwidth=8
-au BufNewFile *.c,*.h set shiftwidth=4
+au BufRead,BufNewFile *.c,*.h set shiftwidth=4
 au BufRead,BufNewFile *.java set shiftwidth=4
 
 au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
 au BufRead,BufNewFile *java set tabstop=4
 
 au BufRead,BufNewFile *.py,*.pyw set expandtab
-au BufRead,BufNewFile *.c,*.h set noexpandtab
+au BufRead,BufNewFile *.c,*.h set expandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
 au BufRead,BufNewFile *.java set expandtab
 
