@@ -1,3 +1,5 @@
 [user]
 	name = Taek Joo Kim
 	email = taicki@gmail.com
+[color]
+	ui = auto

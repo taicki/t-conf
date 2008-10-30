@@ -6,7 +6,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias bc='bc -l'
-alias grep='grep -n'
+#alias grep='grep -n'
 ME=`whoami`
 alias psm='ps -u $ME'
 
