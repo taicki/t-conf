@@ -18,7 +18,7 @@ export CLASSPATH=".:$LIB/ant.jar:$LIB/antlr-2.7.7.jar:$LIB/antlr-3.0.1.jar:$LIB/
 export EDITOR=vim
 
 alias dejaview='ssh -p 12049 dejaview@localhost'
-alias rsync='rsync --progress'
+alias rsync='rsync -v'
 
 export PYTHONPATH=~/lib/python:$PYTHONPATH
 alias screen='TERM=screen screen'
