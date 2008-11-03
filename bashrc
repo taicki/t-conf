@@ -22,3 +22,6 @@ alias rsync='rsync -v'
 
 export PYTHONPATH=~/lib/python:$PYTHONPATH
 alias screen='TERM=screen screen'
+
+HISFILESIZE=1000000000
+HISTSIZE=1000000
