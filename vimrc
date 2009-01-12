@@ -12,7 +12,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 set textwidth=78
-au BufRead,BufNewFile *.txt,*.tex set fo=a
+"au BufRead,BufNewFile *.txt,*.tex set fo=a
 
 set hlsearch
 set incsearch
