@@ -21,7 +21,7 @@ alias dejaview='ssh -p 12049 dejaview@localhost'
 alias rsync='rsync -v'
 
 export PYTHONPATH=~/lib/python:$PYTHONPATH
-alias screen='TERM=screen screen'
+#alias screen='TERM=screen screen'
 
 HISFILESIZE=1000000000
 HISTSIZE=1000000
