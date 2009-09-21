@@ -1,4 +1,4 @@
-alias ls='ls -F --color'
+alias ls='ls -F'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
@@ -11,8 +11,8 @@ ME=`whoami`
 alias psm='ps -u $ME'
 
 export PS1="\u@\h \w \$ "
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH:~/bin
-export MANPATH=/opt/local/share/man:$MANPATH
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH:~/bin
+export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 LIB="$HOME/lib"
 export CLASSPATH=".:$LIB/ant.jar:$LIB/antlr-2.7.7.jar:$LIB/antlr-3.0.1.jar:$LIB/antlr-runtime-3.0.1.jar:$LIB/stringtemplate-3.1b1.jar"
 export EDITOR=vim
