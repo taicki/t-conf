@@ -3,3 +3,6 @@
 	email = taicki@gmail.com
 [color]
 	ui = auto
+[core]
+	autocrlf = false
+	whitespace = cr-at-eol

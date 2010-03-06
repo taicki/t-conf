@@ -1,4 +1,4 @@
-alias ls='ls -F'
+alias ls='ls -F --color'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
@@ -9,6 +9,7 @@ alias bc='bc -l'
 #alias grep='grep -n'
 ME=`whoami`
 alias psm='ps -u $ME'
+alias em='emacs -nw'
 
 export PS1="\u@\h \w \$ "
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH:~/bin
@@ -25,3 +26,10 @@ export PYTHONPATH=~/lib/python:$PYTHONPATH
 
 HISFILESIZE=1000000000
 HISTSIZE=1000000
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
