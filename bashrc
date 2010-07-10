@@ -37,3 +37,7 @@ fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
+
+if [ -f $HOME/.bashlocalrc ]; then
+    . $HOME/.bashlocalrc
+fi
