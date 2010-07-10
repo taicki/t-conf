@@ -1,1 +1,4 @@
 ssh/known_hosts
+auto-save-list
+*.elc
+ac-comphist.dat

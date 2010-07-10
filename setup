@@ -7,3 +7,4 @@ ln -sf $CURDIR/vimrc ~/.vimrc
 ln -sf $CURDIR/vim ~/.vim
 ln -sf $CURDIR/Xdefaults ~/.Xdefaults
 ln -sf $CURDIR/emacs ~/.emacs
+ln -sf $CURDIR/emacs.d ~/.emacs.d
