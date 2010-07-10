@@ -29,8 +29,10 @@ export EDITOR=emacs
 HISFILESIZE=1000000000
 HISTSIZE=1000000
 
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+if [ "$OS" = "Linux" ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
+elif [ "$OS" = "Darwin" ] && [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
 fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
