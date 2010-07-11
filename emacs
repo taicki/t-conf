@@ -65,3 +65,8 @@
 (load-library "flymake-cursor")
 (global-set-key [f10] 'flymake-goto-prev-error)
 (global-set-key [f11] 'flymake-goto-next-error)
+
+(autoload 'markdown-mode "markdown-mode.el"
+  "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+      (cons '("\\.md" . markdown-mode) auto-mode-alist))
