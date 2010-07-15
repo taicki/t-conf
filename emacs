@@ -48,10 +48,10 @@
 (setq ropemac-enable-autoimport t)
 
 ; ropemacs + autocomplete
-(ac-ropemacs-initialize)
-(add-hook 'python-mode-hook
-          (lambda ()
-            (add-to-list 'ac-sources 'ac-source-ropemacs)))
+;(ac-ropemacs-initialize)
+;(add-hook 'python-mode-hook
+;          (lambda ()
+;            (add-to-list 'ac-sources 'ac-source-ropemacs)))
 
 (when (load "flymake" t)
   (defun flymake-pycheckers-init ()
