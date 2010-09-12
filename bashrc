@@ -17,7 +17,8 @@ alias bc='bc -l'
 
 ME=`whoami`
 alias psm='ps -u $ME'
-alias em='emacs -nw'
+alias emacs='emacsclient -nw'
+alias em='emacs'
 alias rsync='rsync -v'
 
 export PS1='\u@\h \w $(__git_ps1 "(%s) ")$ '
@@ -25,7 +26,7 @@ export PATH=~/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
-export EDITOR=emacs
+export EDITOR="emacsclient -nw"
 
 HISFILESIZE=1000000000
 HISTSIZE=1000000
