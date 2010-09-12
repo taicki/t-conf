@@ -23,7 +23,8 @@ alias rsync='rsync -v'
 export PS1='\u@\h \w $(__git_ps1 "(%s) ")$ '
 export PATH=~/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
-export PYTHONPATH=~/lib/python:~/backend:~/django:~/frontend:$PYTHONPATH
+export PYTHONSTARTUP=~/bin/pystartup.py
+export PYTHONPATH=.:$PYTHONPATH
 export EDITOR=emacs
 
 HISFILESIZE=1000000000
