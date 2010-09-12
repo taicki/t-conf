@@ -27,9 +27,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "/Users/taicki/.emacs.d/ac-dict")
-(ac-config-default)
+;(require 'auto-complete-config)
+;(add-to-list 'ac-dictionary-directories "/Users/taicki/.emacs.d/ac-dict")
+;(ac-config-default)
 
 (setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
 (setq interpreter-mode-alist (cons '("python" . python-mode)
