@@ -14,11 +14,15 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias bc='bc -l'
+alias s='sudo'
+alias g='git'
+alias c='cd'
 
 ME=`whoami`
 alias psm='ps -u $ME'
 alias emacs='emacsclient -nw'
 alias em='emacs'
+alias e='emacs'
 alias rsync='rsync -v'
 
 export PS1='\u@\h \w $(__git_ps1 "(%s) ")$ '
