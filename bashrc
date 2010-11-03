@@ -8,6 +8,7 @@ elif [ "$OS" = "Darwin" ]; then
 fi
 
 alias ll='ls -l'
+alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -al'
 alias rm='rm -i'
@@ -25,8 +26,8 @@ alias em='emacs'
 alias e='emacs'
 alias rsync='rsync -v'
 
-export PS1='\u@\h \w $(__git_ps1 "(%s) ")$ '
-export PATH=~/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PS1='\u@\h \w c:$? $(__git_ps1 "(%s) ")$ '
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
