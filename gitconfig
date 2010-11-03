@@ -5,4 +5,4 @@
 	ui = auto
 [core]
 	autocrlf = false
-	whitespace = cr-at-eol
+	whitespace = cr-at-eol,-indent-with-non-tab,trailing-space
