@@ -37,6 +37,9 @@
 				   interpreter-mode-alist))
 (autoload 'python-mode "python-mode" "Python editing mode." t)
 
+(require 'python-mode)
+(modify-syntax-entry ?_ "_" py-mode-syntax-table)
+
 (autoload 'pymacs-apply "pymacs")
 (autoload 'pymacs-call "pymacs")
 (autoload 'pymacs-eval "pymacs" nil t)
