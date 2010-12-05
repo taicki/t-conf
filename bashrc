@@ -32,6 +32,7 @@ export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
 export EDITOR="emacsclient -nw"
+export ALTERNATE_EDITOR=""
 
 HISFILESIZE=1000000000
 HISTSIZE=1000000
