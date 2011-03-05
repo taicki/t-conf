@@ -21,7 +21,7 @@ alias c='cd'
 
 ME=`whoami`
 alias psm='ps -u $ME'
-alias emacs='emacsclient -nw'
+alias emacs='emacs -nw'
 alias em='emacs'
 alias e='emacs'
 alias rsync='rsync -v'
@@ -31,8 +31,7 @@ export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
-export EDITOR="emacsclient -nw"
-export ALTERNATE_EDITOR=""
+export EDITOR="emacs -nw"
 
 HISFILESIZE=1000000000
 HISTSIZE=1000000
