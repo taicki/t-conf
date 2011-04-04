@@ -16,8 +16,10 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias bc='bc -l'
 alias s='sudo'
-alias g='git'
 alias c='cd'
+
+alias g='git'
+complete -o default -o nospace -F _git g
 
 ME=`whoami`
 alias psm='ps -u $ME'
