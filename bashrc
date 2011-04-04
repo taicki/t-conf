@@ -8,7 +8,7 @@ elif [ "$OS" = "Darwin" ]; then
 fi
 
 alias ll='ls -l'
-alias l='ls -l'
+alias l='ls'
 alias la='ls -a'
 alias lla='ls -al'
 alias rm='rm -i'
