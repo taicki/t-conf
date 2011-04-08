@@ -6,3 +6,13 @@
 [core]
 	autocrlf = false
 	whitespace = cr-at-eol,-indent-with-non-tab,trailing-space
+	safecrlf = true
+[github]
+	user = taicki
+[alias]
+        ch = checkout
+        st = status
+        co = commit
+        di = diff
+        lo = log
+        br = branch
