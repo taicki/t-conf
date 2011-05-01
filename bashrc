@@ -17,9 +17,13 @@ alias mv='mv -i'
 alias bc='bc -l'
 alias s='sudo'
 alias c='cd'
+alias ..='cd ..'
+alias gr='grep'
 
 alias g='git'
 complete -o default -o nospace -F _git g
+alias gk='gitk'
+alias gka='gitk --all'
 
 ME=`whoami`
 alias psm='ps -u $ME'
@@ -27,6 +31,7 @@ alias emacs='emacs -nw'
 alias em='emacs'
 alias e='emacs'
 alias rsync='rsync -v'
+alias tf='tail -f'
 
 export PS1='\u@\h \w c:$? $(__git_ps1 "(%s) ")$ '
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
