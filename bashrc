@@ -19,6 +19,7 @@ alias s='sudo'
 alias c='cd'
 alias ..='cd ..'
 alias gr='grep'
+alias le='less'
 
 alias g='git'
 complete -o default -o nospace -F _git g
@@ -51,6 +52,8 @@ fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
+
+. ~/bin/make-completion-wrapper.sh
 
 if [ -f $HOME/.bashlocalrc ]; then
     . $HOME/.bashlocalrc
