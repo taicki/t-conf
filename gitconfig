@@ -16,3 +16,5 @@
         di = diff
         lo = log
         br = branch
+        fe = fetch
+        sh = stash
