@@ -28,9 +28,17 @@ alias gka='gitk --all'
 
 ME=`whoami`
 alias psm='ps -u $ME'
-alias emacs='emacs -nw'
-alias em='emacs'
-alias e='emacs'
+
+if [ "$OS" = "Darwin" ]; then
+    alias emacs='open -a Emacs.app'
+    alias em='emacs'
+    alias e='emacs'
+else
+    alias emacs='emacs -nw'
+    alias em='emacs'
+    alias e='emacs'
+fi
+
 alias rsync='rsync -v'
 alias tf='tail -f'
 
