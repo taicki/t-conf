@@ -20,6 +20,7 @@ alias c='cd'
 alias ..='cd ..'
 alias gr='grep'
 alias le='less'
+alias tm='tmux'
 
 alias g='git'
 complete -o default -o nospace -F _git g
@@ -29,7 +30,7 @@ alias gka='gitk --all'
 ME=`whoami`
 alias psm='ps -u $ME'
 
-if [ "$OS" = "Darwin" ]; then
+if [ "$OS" = "Darwin" -a ! -n "${SSH_TTY:-1}" ]; then
     alias emacs='open -a Emacs.app'
     alias em='emacs'
     alias e='emacs'
