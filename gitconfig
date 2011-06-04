@@ -19,3 +19,4 @@
         fe = fetch
         sh = stash
         ad = add
+        me = merge

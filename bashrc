@@ -30,7 +30,7 @@ alias gka='gitk --all'
 ME=`whoami`
 alias psm='ps -u $ME'
 
-if [ "$OS" = "Darwin" -a ! -n "${SSH_TTY:-1}" ]; then
+if [ "$OS" = "Darwin" -a ! -n "${SSH_TTY+x}" ]; then
     alias emacs='open -a Emacs.app'
     alias em='emacs'
     alias e='emacs'
