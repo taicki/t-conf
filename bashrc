@@ -18,9 +18,11 @@ alias bc='bc -l'
 alias s='sudo'
 alias c='cd'
 alias ..='cd ..'
+alias ...='cd ../..'
 alias gr='grep'
 alias le='less'
 alias tm='tmux'
+alias t='touch'
 
 alias g='git'
 complete -o default -o nospace -F _git g

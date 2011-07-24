@@ -7,3 +7,7 @@ except ImportError:
 else:
     import rlcompleter
     readline.parse_and_bind("tab: complete")
+
+from datetime import datetime
+def fromtimestamp(ts):
+    return datetime.utcfromtimestamp(ts)
