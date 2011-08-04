@@ -23,6 +23,7 @@ alias gr='grep'
 alias le='less'
 alias tm='tmux'
 alias t='touch'
+alias p='python'
 
 alias g='git'
 complete -o default -o nospace -F _git g
