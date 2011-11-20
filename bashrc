@@ -4,7 +4,7 @@ if [ "$OS" = "Linux" ]; then
     alias ls='ls -F --color=auto'
 elif [ "$OS" = "Darwin" ]; then
     export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
-    alias ls='ls -G'
+    alias ls='ls -FG'
 fi
 
 alias ll='ls -l'
@@ -34,13 +34,11 @@ ME=`whoami`
 alias psm='ps -u $ME'
 
 if [ "$OS" = "Darwin" -a ! -n "${SSH_TTY+x}" ]; then
-    alias emacs='open -a Emacs.app'
-    alias em='emacs'
-    alias e='emacs'
+    alias em='open -a Emacs.app'
+    alias e='em'
 else
-    alias emacs='emacs -nw'
-    alias em='emacs'
-    alias e='emacs'
+    alias em='emacs -nw'
+    alias e='em'
 fi
 
 alias rsync='rsync -v'
@@ -53,8 +51,12 @@ export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
 export EDITOR="emacs -nw"
 
-HISFILESIZE=1000000000
+# for history sync and append
+shopt -s histappend
+export PROMPT_COMMAND="history -n; history -a"
+unset HISTFILESIZE
 HISTSIZE=1000000
+HISFILESIZE=1000000000
 
 if [ "$OS" = "Linux" ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
