@@ -19,6 +19,7 @@ alias s='sudo'
 alias c='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias gr='grep'
 alias le='less'
 alias tm='tmux'
@@ -50,6 +51,8 @@ export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
 export EDITOR="emacs -nw"
+export LESSOPEN="|lesspipe.sh %s"
+export CDPATH='.:~/:..:../..:~/.dirlinks'
 
 # for history sync and append
 shopt -s histappend
