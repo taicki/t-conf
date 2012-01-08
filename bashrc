@@ -34,13 +34,8 @@ alias gka='gitk --all'
 ME=`whoami`
 alias psm='ps -u $ME'
 
-if [ "$OS" = "Darwin" -a ! -n "${SSH_TTY+x}" ]; then
-    alias em='open -a Emacs.app'
-    alias e='em'
-else
-    alias em='emacs -nw'
-    alias e='em'
-fi
+alias em='emacs -nw'
+alias e='em'
 
 alias rsync='rsync -v'
 alias tf='tail -f'
