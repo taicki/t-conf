@@ -25,6 +25,7 @@ alias le='less'
 alias tm='tmux'
 alias t='touch'
 alias p='python'
+alias o='open'
 
 alias g='git'
 complete -o default -o nospace -F _git g
