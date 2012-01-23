@@ -46,7 +46,7 @@ export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
-export EDITOR="emacs -nw"
+export EDITOR="emacs"
 export LESSOPEN="|lesspipe.sh %s"
 export CDPATH='.:~/:..:../..:~/.dirlinks'
 
