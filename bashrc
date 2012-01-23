@@ -39,6 +39,7 @@ alias e='em'
 
 alias rsync='rsync -v'
 alias tf='tail -f'
+alias ack='ack -i'
 
 export PS1='\u@\h \w c:$? $(__git_ps1 "(%s) ")$ '
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
