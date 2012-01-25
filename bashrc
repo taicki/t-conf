@@ -40,13 +40,14 @@ alias e='em'
 
 alias rsync='rsync -v'
 alias tf='tail -f'
+alias ack='ack -i'
 
 export PS1='\u@\h \w c:$? $(__git_ps1 "(%s) ")$ '
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
-export EDITOR="emacs -nw"
+export EDITOR="emacs"
 export LESSOPEN="|lesspipe.sh %s"
 export CDPATH='.:~/:..:../..:~/.dirlinks'
 
