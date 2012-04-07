@@ -27,14 +27,19 @@ alias tm='tmux'
 alias t='touch'
 alias p='python'
 alias o='open'
+alias rsync='rsync -v'
+alias tf='tail -f'
+alias ack='ack -i'
+ME=`whoami`
+alias psm='ps -u $ME'
 
+# git settings
 alias g='git'
 complete -o default -o nospace -F _git g
 alias gk='gitk'
 alias gka='gitk --all'
-
-ME=`whoami`
-alias psm='ps -u $ME'
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
 
 # editor settings
 alias em='emacs -nw'
@@ -42,10 +47,6 @@ alias e='em'
 alias s='subl -w -n'
 alias ss='subl -n'
 export EDITOR='subl -w -n'
-
-alias rsync='rsync -v'
-alias tf='tail -f'
-alias ack='ack -i'
 
 export PS1='\u@\h \w c:$? $(__git_ps1 "(%s) ")$ '
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
@@ -67,9 +68,6 @@ if [ "$OS" = "Linux" ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 elif [ "$OS" = "Darwin" ] && [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
-
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWSTASHSTATE=1
 
 . ~/bin/make-completion-wrapper.sh
 
