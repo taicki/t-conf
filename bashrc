@@ -36,8 +36,12 @@ alias gka='gitk --all'
 ME=`whoami`
 alias psm='ps -u $ME'
 
+# editor settings
 alias em='emacs -nw'
 alias e='em'
+alias s='subl -w -n'
+alias ss='subl -n'
+export EDITOR='subl -w -n'
 
 alias rsync='rsync -v'
 alias tf='tail -f'
@@ -48,7 +52,6 @@ export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
 export PYTHONSTARTUP=~/bin/pystartup.py
 export PYTHONPATH=.:$PYTHONPATH
-export EDITOR="emacs"
 export LESSOPEN="|lesspipe.sh %s"
 export CDPATH='.:~/:..:../..:~/.dirlinks'
 
