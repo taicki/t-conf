@@ -15,7 +15,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias bc='bc -l'
-alias s='sudo'
 alias c='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -58,7 +57,7 @@ export CDPATH='.:~/:..:../..:~/.dirlinks'
 
 # for history sync and append
 shopt -s histappend
-export PROMPT_COMMAND="history -n; history -a"
+# export PROMPT_COMMAND="history -n; history -a"
 unset HISTFILESIZE
 HISTSIZE=1000000
 HISFILESIZE=1000000000
