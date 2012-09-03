@@ -43,10 +43,11 @@ export GIT_PS1_SHOWSTASHSTATE=1
 # editor settings
 alias em='emacs -nw'
 alias e='em'
-alias s='subl -w -n'
-alias ss='subl -n'
-export EDITOR='subl -w -n'
+# s() { subl -w -n "$@" ;}
+ss() { subl -n "$@" ;}
+export EDITOR='s'
 
+# PATH settings
 export PS1='\u@\h \w c:$? $(__git_ps1 "(%s) ")$ '
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export MANPATH=/usr/local/share/man:/opt/local/share/man:$MANPATH
