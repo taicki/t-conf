@@ -47,6 +47,10 @@ alias e='em'
 ss() { subl -n "$@" ;}
 export EDITOR='s'
 
+# ruby/rails
+alias r='rails'
+alias b='bundle'
+
 # PATH settings
 export PS1='\u@\h \w c:$? $(__git_ps1 "(%s) ")$ '
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
@@ -74,3 +78,5 @@ fi
 if [ -f $HOME/.bashlocalrc ]; then
     . $HOME/.bashlocalrc
 fi
+
+eval "$(rbenv init -)"
