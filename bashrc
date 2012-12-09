@@ -46,6 +46,8 @@ alias e='em'
 # s() { subl -w -n "$@" ;}
 ss() { subl -n "$@" ;}
 export EDITOR='s'
+alias ew='edit-which'
+alias ef='edit-fn'
 
 # ruby/rails
 alias r='rails'
