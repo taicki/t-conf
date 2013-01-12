@@ -66,6 +66,7 @@ shopt -s histappend
 unset HISTFILESIZE
 HISTSIZE=1000000
 HISFILESIZE=1000000000
+export HISTCONTROL=ignorespace
 
 if [ "$OS" = "Linux" ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
