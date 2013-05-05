@@ -24,3 +24,6 @@
         graph = log --branches --pretty=short --decorate --graph
         sgraph = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset - %s' --abbrev-commit --date=relative
         old = "!sh -c 'git update-ref refs/old/$1 refs/heads/$1 && git branch -D $1' -"
+        sa = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset - %s' --abbrev-commit --date=relative --all
+[diff]
+        algorithm = patience
